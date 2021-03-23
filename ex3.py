@@ -16,5 +16,10 @@ def ex3(lst):
         res = res + x
     return res
 
-# Driver program to test above function
+# tester le programme
 print(ex3([-2, -5, 6, -2, -3, 1, 5, -6]))
+
+# Calcul d complexite d algo
+""" 
+T(n) = 2 + n(7) + 1 + n(2) + 1 = O(n) 
+"""

@@ -1,27 +1,19 @@
-def isSubsetSum(set, n, sum):
+def ex5(set, n, sum):
     # Base Cases
-    if (sum == 0):
-        return True
-    if (n == 0 and sum != 0):
-        return False
-
-    # If last element is greater than
-    # sum, then ignore it
+    if (sum == 0):	return True
+    if (n == 0 and sum != 0):	return False
+    # si un element est sup ignore le
     if (set[n - 1] > sum):
-        return isSubsetSum(set, n - 1, sum);
-
-        # else, check if sum can be obtained
-    # by any of the following
-    # (a) including the last element
-    # (b) excluding the last element
-    return isSubsetSum(set, n - 1, sum) or isSubsetSum(set, n - 1, sum - set[n - 1])
+        return ex5(set, n - 1, sum);
+    # else, check si c possible
+    return ex5(set, n - 1, sum) or ex5(set, n - 1, sum - set[n - 1])
 
 
-# Driver program to test above function
+# tester le programme
 set =  [3, 34, 4, 12, 5, 2]
 sum = 9
 n = len(set)
-if (isSubsetSum(set, n, sum) == True):
-    print("Found a subset with given sum")
+if (ex5(set, n, sum) == True):
+    print("Found a subset")
 else:
-    print("No subset with given sum")
+    print("No")

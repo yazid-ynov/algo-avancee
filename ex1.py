@@ -18,5 +18,10 @@ def ex1(myStr):
     else:
         return "Unbalanced"
 
-# Driver program to test above function
+# tester l programme
 print(ex1("[{()}]"))
+
+# Calcul d complaxite d algo
+""" 
+T(n) = 1 + n(11)= O(n) 
+"""

@@ -13,9 +13,14 @@ def ex4(lst1, lst2):
 
 
 
-# Driver program to test above function
+# tester le programme
 
 words = ["go","bat","me","eat","goal","boy", "run"]
 chars = ['e','o','b','a','m','g','l']
 
 ex4(words, chars)
+
+# Calcul d complaxite d algo
+""" 
+T(n) = n(2+n(5)) = O(n^2) 
+"""
