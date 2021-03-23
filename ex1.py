@@ -21,7 +21,7 @@ def ex1(myStr):
 # tester l programme
 print(ex1("[{()}]"))
 
-# Calcul d complaxite d algo
+# Calcul d complexite d algo
 """ 
 T(n) = 1 + n(11)= O(n) 
 """
