@@ -15,7 +15,7 @@ def clean(matrice, i, j):
     clean(matrice, i - 1, j +1)
     clean(matrice, i - 1, j-1)
 
-def numIslands(matrice):
+def ex2_numIslands(matrice):
     res = 0
     r = len(matrice)
     c = len(matrice[0])
@@ -40,4 +40,4 @@ matrice = [
  [1, 0, 1, 0, 1, 0, 0, 1, 0, 0],
  [1, 1, 1, 1, 0, 0, 0, 1, 1, 1]
 ]
-print(numIslands(matrice))
+print(ex2_numIslands(matrice))
