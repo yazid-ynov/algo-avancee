@@ -7,9 +7,9 @@ def ex1(myStr):
         if i in open_list:
             last_opened.append(i)
         elif i in close_list:
-            pos = close_list.index(i)
+            zz = close_list.index(i)
             if ((len(last_opened) > 0) and
-                    (open_list[pos] == last_opened[len(last_opened) - 1])):
+                    (open_list[zz] == last_opened[len(last_opened) - 1])):
                 last_opened.pop()
             else:
                 return "Unbalanced"
