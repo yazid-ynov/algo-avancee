@@ -1,13 +1,13 @@
-def ex4(lst1, lst2):
-    for word in lst1:
-        lst22 = set(lst2)
+def ex4(words, chars):
+    for word in words:
+        lst = set(chars)
         check = 1
         for c in word:
-            if c not in lst22:
+            if c not in lst:
                 check = 0
                 break
             else:
-                lst22.remove(c)
+                lst.remove(c)
         if check == 1:
             print(word)
 
